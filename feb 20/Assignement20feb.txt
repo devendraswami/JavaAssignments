@@ -1,0 +1,173 @@
+1. What is Inheritance ? 
+
+Ans --> Whenever we have to transfer the behaviour of one class to the another class then the concept of 
+Inheritance comes .  
+In Inheritance the behaviour of parent class is transferd to the child class .
+
+
+
+2. What is superclass and Subclass ? 
+
+Ans - > Superclass -  The parent class is known as Super class. whose behaviour is transferred to the subclass. 
+
+
+       SubClass - The Child class is known as the Subclass. To whom the behaviour are transferred. 
+
+
+    
+
+3. How is inheritance implemented / achived in java? 
+
+Ans --> Inheritance in java is achived by using extends keyword . 
+
+Syntax for inheritance -
+          
+       "childClass extends ParentClass 
+       {
+         // Body of child class. now the behaviour of Parent class is to transferd to this child class 
+       } "
+
+
+ 4. What is Polymorphism? 
+ 
+ Ans--> 
+
+ If one thing exists in more then one form then it is called Polymorphism . 
+  
+ There are two types of polymorphism -
+ 1. Static polymorphism 
+ 2. Dynamic polymorphism 
+
+
+ 5. Differentiate between method Overloading and Overiding ? 
+
+ Ans --> 
+
+  Method Overloading - >  
+
+  Method Overloading simply means that having multiple methods with same name and different Parameters . 
+  Extending the existing functionality with new Functionlity . 
+
+  It is compile time polymorphism .
+
+  Occures between same class methods . 
+
+
+  Method Overriding --> 
+ 
+  It is the process of replacing the existing functionality of a method to a new functionality is called 
+  method overriding . 
+
+  it is run time polymorphism . 
+
+  Occures between super class and subclass . 
+
+  method overloading can be done with or without inheritance but method overriding can be done only with 
+  inheritance only. 
+
+
+
+  6. What is an abstraction explain with an example . 
+
+  Ans --> Abstraction is used to hide the internal details and showinf the useful information . 
+
+  abstract  keyword is used to achieve Abstraction . 
+
+  for example 
+       abstract class Animal 
+       {
+        // abstract class Animal
+
+        abstract void sleep()
+        {
+            // It is abstract method (it can't be override in the child class )
+        } 
+       }
+
+
+
+       7. What is the difference between final method and abstract method . 
+
+       final method - 
+       
+       final method is regarded as complete method. we can't override the final method . 
+
+       for example - 
+
+        class Animal 
+       {
+          final  void sleep()
+        {
+            System.out.println(" Animal needs sleep ")
+        }
+       }
+
+       class Tiger extends Animal 
+       {
+
+        // we can't overide final method so we can't change anythin here in the sleep method 
+
+       }
+
+
+       Abstract method - 
+
+       Abstract method is regarded as incomplete method . And the only way to use the abstract method is override.
+
+       for example - 
+
+       abstract class Animal 
+       {
+        abstract void sleep();
+       
+       }
+
+       class Tiger extends Animal 
+       {
+         void sleep()
+         {
+            System.out.println("Tiger needs sleep ")
+         }
+       }
+
+
+
+
+    8. what is final class in java ? 
+
+    Ans -- If we make a class  final in java then the class will not take further participate in Inheritance. 
+            A final class can't be inherited by subclass . If we try to do so then it will through the compile time error . 
+
+
+
+
+9.  Differentiate between abstraction and encapsulation ? 
+
+
+Ans--> 
+
+Abstraction - Abstraction is used to hide the unnacessary  data and shows the important imformation. Abstraction is 
+achived by using a "abstract" keyword before the method or class . 
+
+
+encapsulation - Encapsulation is used to hide or protect data from outside world . It can be implemented by 
+                access modifiers (private , protected  , public ). we use getters and setters method to hide the data .
+
+
+
+10.  Differentiate between runtime and complie time polymorphism . Explain with example. 
+
+Ans-->  Runtime polymorphism -  
+
+If the Polymorphism exists at run time then it is called Runtime polymorphism. 
+ex - method overriding 
+
+
+compiletime polymorphism - If the polymorphism exists at compile time then it is called as compiletime 
+polymorphism .
+
+ex - method overloading 
+
+
+
+
