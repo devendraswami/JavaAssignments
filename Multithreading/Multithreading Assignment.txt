@@ -1,0 +1,107 @@
+
+Question1 What do you mean by Multithreading? Why it is important?
+
+Ans
+
+Multithreading means multiple therads . It is the most important feature of java . By Multithrading we 
+can use two or more therads simultaneously to execute the program. Multithreading makes the program 
+simple and fast. The main purpose is to excute the multiple thrads simultaneously. It save the time of CPU.
+
+2. What are the benefits of using Multithrading?
+
+Ans - some of the benefits of using Multithrading are below - 
+
+ 1. It make the program to run contionously even if a part of it is blocked. 
+ 2. It save the time of CPU.
+ 3. Makes the program fast and Easy to execute. 
+ 4. Improve performance compared to traditional parallel programs that use multiple processes.
+
+
+ 3. What is Thread? 
+ 
+ Ans - Thread is basically lightweight and smallest unit of processing that is manged by thread sheduler.
+  It is the line of execution. 
+
+
+
+  4. What are the two ways of implementing the thread in java ?
+
+  
+  Ans->
+
+  The two ways of implementing  thread in java are- 
+  
+  1. By implementing the Runnable interface
+
+  class Demo implements Runnable
+  {
+    public void run()
+    {
+        System.out.println("My thread is running");
+    }
+
+    public void main(String []args)
+    {
+        Demo obj = new Demo();
+        Thread tObj = new Thread(obj);
+        
+        tObj.start();
+    }
+  }
+ 
+  // output will be my thread is running 
+
+  it is recommend or more effiecent way of implementing because in this child class can have two parent classes. 
+
+
+  2. By Extending Thread class 
+
+  class Demo extends Thread 
+  {
+    public void run()
+    {
+        System.out.println("My thread is running ");
+    }
+
+    public static void main(String []args)
+    {
+        Demo obj = new Demo();
+        obj.start();
+    }
+  }
+
+// Output will be my thread is running 
+
+
+
+5. What is the difference between Process and Thread?
+
+Ans 
+
+Thread -  It is the smallest unit of processing. It is controlled by thred sheduller.
+
+Process - It simply refers to the program that is currently executing. It is controlled by PCB(Process 
+Control Block).
+
+
+6. How Can we create deamon Threads?
+
+Ans-
+ We can create deamon Threads by using Thread class setDeamon(true). It is used to mark the current 
+as deamon . isDeamon() method is used to check the current thread is deamon or not. if the thread is 
+deamon  then it will result in true otherwise false.
+
+
+7. What are the wait() and sleep() methods? 
+
+Ans --> 
+
+wait()- It is a non- static method that causes the current thread to wait and go to the sleep until some 
+        other threads call the notify. It is defined in the object class and should only called from a 
+        synchronized context. 
+
+
+sleep() --> 
+
+it is a static method that pauses or stops the execution of current thread for specifed time. It is defined 
+in the thread class. 
