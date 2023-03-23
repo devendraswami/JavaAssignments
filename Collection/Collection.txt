@@ -1,0 +1,97 @@
+
+
+Ques1  What is Collection FrameWork in java? 
+
+Ans--> 
+
+       Collection Framework is collection of classes and interface which is used to store and manupilate
+       the data. The classes are LinkedList, ArrayList, Hashset, LinkedList etc. The interface are List, 
+       Queue , set etc.
+       
+       
+
+Ques2   What is the difference between LinkedList and ArrayList? 
+
+Ans-->  
+ 
+ArrayList --> 
+             1. It uses the Dynamic array . 
+             2. ArrayList implements list interface .
+             3. It will preserve the order of data. 
+             4. It provides Random Access . 
+
+             
+
+LinkedList --> 
+             1. LinkedList implements List and Deque Interface. 
+             2. Behind the scene LinkedList Follows Doubly linkedList Data Structure. 
+             3. LinkedList takes more memory as it Object as well as address of the object . 
+             4. It doesnot provide Random Access. 
+
+
+Ques3       What is the Difference Between Iterator and ListIterator? 
+
+Ans-->     
+
+Iterator --> 1. Iterator can fetch the elements only in forword direction. 
+             2.  Iterator can be used in List, Queue and set .
+
+
+ListIterator --> 1. ListIterator can fetch data from both direction. Forward and Backward direction. 
+                 2.  ListIterator can be used only in List interface. 
+
+
+
+Ques4       What is the difference between Iterator and Enumeration? 
+
+Ans-->  Iterator 
+                1. Iterator can transvere legecy and non- legecy elements.
+                2. Iterator is fail-fast. 
+                3. It is slower the Enumeration. 
+                
+       Enumeration 
+                 1. Enumeration can transverce only legecy elements. 
+                 2. Enumeration is not Fail- fast. 
+                 3. It is faster then Iterator. 
+
+
+Ques5   What is the difference between List and Set ? 
+
+Ans-->  List and set both implements Collection interface whereas there are somediffernce- 
+        1. List can contain duplicate items while set contains unique items. 
+        2. List is an ordered Collection which preserve  the insertion order. while set is an unordered 
+           collection which do not preserve the insertion order. 
+        3. List interface contains a single leagcy class while set interface do not contain any legcy class. 
+
+
+Ques6 . What is the difference between HashSet and Treeset ? 
+
+Ans-->  Hashset and TreeSet both are the implementation of set interface but there are somedifferece between those
+        1. Ordering -  HashSet is an UnOrdered collection. It will not preserve the data order. While TreeSet 
+                       is an ordered Collection. it will Store the data in sorted Order. 
+
+       2. Implementation - HastSet implements the HashTable behind the scene while TreeSet implements Binary search 
+                           Tree Data Structure. 
+
+       3. Memory - HashSet uses less memory then Tree Set because it only store elements. While TreeSet stores additional information.
+        
+       4. Usage-  Hashset is good to use if there is no need to preserve the order. Treeset is good if we want 
+                  the data in sorted order. 
+
+
+Ques7  What is the difference between Arrays and ArrayList? 
+
+Ans-->  Both Arrays and ArrayList are used to store the collection of data in java while there are some difference - 
+        
+1. Type -  Arrays can store Primitive data Types as well as objects . While Array list can store Objects. 
+
+2. Size-    The size of Array is fixed once it is created we can't change the size after intilization. but 
+            in arrayList we can change the size after intilization. 
+
+3. Intilization - Arrrays can be intilized While creating . but in Array list we need Methods to intilize. 
+
+4. Speed -  Arrays are fast in nature then ArrayList. 
+
+5. Methods - Arrays have limited methods while ArrayList have a lot of methods. 
+
+        
