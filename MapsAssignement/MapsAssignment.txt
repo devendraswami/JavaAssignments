@@ -1,0 +1,82 @@
+ 1. What is Maps? 
+    Answer -
+
+     Map is a interface in java. Which is used to store data in key value-pair form. Where each
+     key value pair is known as entry. A map contains unique keys. 
+     A Map is useful if you have to update or delete elements on the basis of a key. 
+
+
+
+     2. What are the most commanly used implementations of map in java? 
+     Answer - 
+
+     The most commanly used interface of java are HashMap, LinkedHashMap, TreeSet and ConcurrentHashMap. 
+
+
+     3. What is the difference between HashMap and TreeMap? 
+     Answer - 
+
+     In HashMap order of insertion is not preserved. It uses Hashing to store key value pair. In TreeMap 
+     we will get the data in sorted order. 
+
+
+     4. How do you check if a key exists in a map in java? 
+     Answer - 
+
+     We can check if a key is present using containsKey() or get(). containsKey results in boolean value 
+     and get() method will give the value if key is present if not then it will give  null.  
+
+
+     5. What are generics in java? 
+     Answer -
+    
+     Generics in java introdued in java in 1.5 version. Generics is a feature in java that allows for 
+     creation of classes , interfaces and methods that can operate on a variety of data types. 
+
+     It provides compile-time type safety by enabling the specification of the data type of objects that a 
+     class or method can work with. 
+
+     Generics are implemented using type parameters which are specified inside angle brackets <> . 
+
+
+     6. What are the benefits of using genrics in java ? 
+
+     Ans- 
+
+     Some of the benefits of using Generics -
+      1.TypeSafety -
+       When we use generics it will give us complie time error if while accessing the data type is mismatched
+         so that we can change it while creating the program it will not stop the execution of program later. 
+
+      2. code reusablity 
+      3. Improved performance 
+      
+
+      7. What is Generics class in java? 
+      Answer - 
+
+      A generics class in java is a class which can work with different types of data . It is defined using
+      parameters enclosed in angle brackets. which defines the data type used. 
+
+      8. What is Type parameter in java Generics? 
+
+      Answer- 
+
+      Generics in java is a single Uppar case letter in angle brackets. used to specify the data type of 
+      a class or method . for example - <T> 
+
+
+      9. What is Generis method in java? 
+
+      Answer- 
+
+      Generics method in java is a method which can work with different data type. It is parameritised in angle 
+      brackets. which specify the type of data used . 
+
+
+      10. What is the difference between ArrayList and ArrayList<T> ?
+      
+      Answer- 
+
+      ArrayList is a non genrics class. It can store any data type. While ArrayList<T> is a generics class 
+      it can store only specified data type. 
